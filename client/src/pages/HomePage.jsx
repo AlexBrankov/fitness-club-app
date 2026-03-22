@@ -5,11 +5,10 @@ export default function HomePage({ user }) {
     <main>
       <section className="hero container">
         <div>
-          <span className="badge">Готово за представяне</span>
-          <h2>Уеб приложение за фитнес клуб с реалистични функции</h2>
+          <span className="badge">Get in shape NOW!</span>
+          <h2>Фитнес клуб "Black Sun Empire" </h2>
           <p>
-            Управлявай членове, график и записвания от едно място. Проектът е подготвен така,
-            че да може да се стартира локално и да се качи в GitHub.
+            Управлявай своето членство, своите графици и записвания от едно място.
           </p>
           <div className="hero-actions">
             <Link to={user ? '/dashboard' : '/auth'} className="button accent">
