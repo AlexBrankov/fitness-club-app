@@ -1,0 +1,67 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #e5e7eb;
+  background: #0f172a;
+}
+
+* { box-sizing: border-box; }
+html, body, #root { margin: 0; min-height: 100%; }
+body { background: linear-gradient(180deg, #0f172a, #111827 30%, #e5e7eb 30%, #f8fafc 100%); color: #0f172a; }
+a { color: inherit; text-decoration: none; }
+button, input { font: inherit; }
+button { cursor: pointer; }
+
+.container { width: min(1120px, calc(100% - 2rem)); margin: 0 auto; }
+.narrow { width: min(720px, calc(100% - 2rem)); margin: 2rem auto; }
+.topbar { color: white; padding: 1rem 0; }
+.topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.brand { margin: 0; font-size: 1.4rem; }
+.brand-subtitle { margin: .25rem 0 0; color: #cbd5e1; font-size: .95rem; }
+.navlinks { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.navlinks a { color: #cbd5e1; }
+.navlinks a.active { color: white; }
+
+.hero { display: grid; grid-template-columns: 1.6fr 1fr; gap: 2rem; align-items: center; padding: 4rem 0 3rem; color: white; }
+.hero h2 { font-size: clamp(2rem, 5vw, 3.7rem); margin: .8rem 0; line-height: 1.05; }
+.hero p { color: #cbd5e1; font-size: 1.05rem; max-width: 60ch; }
+.badge, .pill { display: inline-block; background: rgba(16,185,129,.12); color: #34d399; border: 1px solid rgba(52,211,153,.25); padding: .4rem .75rem; border-radius: 999px; font-size: .88rem; }
+.hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.stats-card { background: rgba(255,255,255,.07); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,.08); border-radius: 28px; padding: 1.5rem; display: grid; gap: 1rem; }
+.stat { background: rgba(15,23,42,.55); border-radius: 22px; padding: 1.25rem; }
+.stat span { display: block; font-size: 2rem; font-weight: 700; color: white; }
+.stat small { color: #cbd5e1; }
+
+.features-grid, .class-grid, .admin-layout { display: grid; gap: 1.25rem; margin: 2rem auto 3rem; }
+.features-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+.class-grid { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+.admin-layout { grid-template-columns: 1fr 1fr; align-items: start; }
+.card { background: white; border-radius: 28px; padding: 1.5rem; box-shadow: 0 16px 40px rgba(15,23,42,.08); }
+.auth-card { margin-top: 2rem; }
+.auth-tabs { display: inline-flex; background: #e2e8f0; border-radius: 999px; padding: .3rem; margin-bottom: 1rem; }
+.auth-tabs button { border: 0; background: transparent; padding: .6rem 1rem; border-radius: 999px; }
+.auth-tabs .active { background: white; }
+.form-grid { display: grid; gap: 1rem; }
+.two-columns { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+label { display: grid; gap: .45rem; color: #334155; font-weight: 600; }
+input { border: 1px solid #cbd5e1; border-radius: 14px; padding: .9rem 1rem; }
+input:focus { outline: 2px solid #86efac; border-color: #10b981; }
+.button, .button-link { border: 0; border-radius: 16px; padding: .9rem 1.2rem; display: inline-flex; align-items: center; justify-content: center; font-weight: 700; }
+.button.accent, .button-link.accent { background: linear-gradient(135deg, #10b981, #34d399); color: #052e16; }
+.button.ghost { background: #e2e8f0; color: #0f172a; }
+.page-header { margin-top: 2rem; }
+.page-header h2 { margin-bottom: .25rem; }
+.class-card h3 { margin: .8rem 0; }
+.class-topline, .stack-row { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.class-actions { margin-top: 1rem; }
+.stack-list { display: grid; gap: .9rem; }
+.stack-row { padding: 1rem 0; border-bottom: 1px solid #e2e8f0; }
+.muted { color: #64748b; }
+.error-message, .success-message { padding: 1rem 1.25rem; border-radius: 18px; margin-bottom: 1rem; }
+.error-message { background: #fee2e2; color: #991b1b; }
+.success-message { background: #dcfce7; color: #166534; }
+.center-screen { min-height: 100vh; display: grid; place-items: center; }
+
+@media (max-width: 820px) {
+  .hero, .admin-layout, .two-columns, .topbar-inner { grid-template-columns: 1fr; display: grid; }
+  .navlinks { justify-content: start; }
+}

@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "4db667bb-a3fd-4738-b7d4-17d9a72bb2d5",
+      "name": "Admin User",
+      "email": "admin@fitclub.com",
+      "passwordHash": "$2a$10$JqmHlqZJqsROtz4fJQPVUeTJJW3hcstJriS/iZ4boxi94cxh89EGu",
+      "role": "admin",
+      "bookings": []
+    },
+    {
+      "id": "8d305cd3-f375-4e35-b021-2f1a07935c5c",
+      "name": "Member User",
+      "email": "member@fitclub.com",
+      "passwordHash": "$2a$10$9pEwuyk8alXx84Q.65ceJOdW0vVHzB24CqhJcACBcCBZspSKlL/FS",
+      "role": "member",
+      "bookings": []
+    }
+  ],
+  "classes": [
+    {
+      "id": "70c60c71-1e53-46e8-9530-dbd7ad4a6c18",
+      "name": "Функционална тренировка",
+      "coach": "Иван Петров",
+      "day": "Понеделник",
+      "time": "08:00",
+      "category": "Фитнес",
+      "capacity": 12,
+      "bookedUserIds": []
+    },
+    {
+      "id": "4127197e-6e78-4f31-82e0-f2490f645b13",
+      "name": "Йога",
+      "coach": "Мария Георгиева",
+      "day": "Сряда",
+      "time": "10:30",
+      "category": "Йога",
+      "capacity": 16,
+      "bookedUserIds": []
+    },
+    {
+      "id": "4d458119-b577-4a1b-9ae4-380613d9363a",
+      "name": "HIIT",
+      "coach": "Николай Димитров",
+      "day": "Петък",
+      "time": "18:30",
+      "category": "Кардио",
+      "capacity": 10,
+      "bookedUserIds": []
+    }
+  ]
+}
